@@ -132,3 +132,8 @@ Developed as a full-stack development internship project.
 ![Category](screenshots/category.png)
 
 
+## Demo Video
+
+Watch the ExpenseTracker application demo:
+
+[▶️ Watch ExpenseTracker Demo](https://drive.google.com/file/d/1N4z6lXcGWCbhkEBqvPX5JOaBl5BUB_wo/view?usp=sharing)
