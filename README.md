@@ -119,7 +119,8 @@ Developed as a full-stack development internship project.
 
 
 
- ## Screenshots
+
+## Screenshots
 
 ### Dashboard
 ![Expense Tracker Dashboard](screenshots/dashboard.png)
@@ -129,3 +130,5 @@ Developed as a full-stack development internship project.
 
 ### Category
 ![Category](screenshots/category.png)
+
+
