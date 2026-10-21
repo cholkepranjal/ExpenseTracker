@@ -1,0 +1,294 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1e293b;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: #ffffff;
+  padding: 24px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5eaf1;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #172554;
+}
+
+.header p {
+  margin: 8px 0 0;
+  color: #64748b;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: #2563eb;
+  color: white;
+  font-size: 27px;
+  font-weight: bold;
+  border-radius: 14px;
+}
+
+main {
+  max-width: 1250px;
+  margin: 35px auto;
+  padding: 0 24px;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 28px;
+}
+
+.summary-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #e7edf5;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.04);
+}
+
+.summary-card p {
+  margin: 0 0 14px;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.summary-card h2 {
+  margin: 0;
+  font-size: 30px;
+  overflow-wrap: anywhere;
+}
+
+.balance {
+  background: #1d4ed8;
+  color: white;
+}
+
+.balance p {
+  color: #dbeafe;
+}
+
+.green {
+  color: #16a34a;
+}
+
+.red {
+  color: #dc2626;
+}
+
+.balance h2 {
+  color: white;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 0.85fr 1.5fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.panel {
+  background: white;
+  padding: 26px;
+  border-radius: 16px;
+  border: 1px solid #e7edf5;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.04);
+}
+
+.panel h2 {
+  margin: 0 0 24px;
+  font-size: 21px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  outline: none;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #dbeafe;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 13px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background: #1d4ed8;
+}
+
+.empty {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #64748b;
+}
+
+.empty span {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.empty p {
+  margin: 18px 0 7px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.empty small {
+  line-height: 1.6;
+}
+
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 17px 0;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.transaction:last-child {
+  border-bottom: none;
+}
+
+.transaction-info,
+.transaction-right {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.transaction-info {
+  min-width: 0;
+}
+
+.transaction-info strong {
+  overflow-wrap: anywhere;
+}
+
+.transaction-info small {
+  color: #64748b;
+}
+
+.transaction-right {
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.delete-button {
+  border: none;
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 5px 9px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-button:hover {
+  background: #fee2e2;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 15px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .summary {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    padding: 20px 24px;
+  }
+
+  .header h1 {
+    font-size: 23px;
+  }
+
+  main {
+    margin: 24px auto;
+    padding: 0 16px;
+  }
+
+  .panel {
+    padding: 20px;
+  }
+}

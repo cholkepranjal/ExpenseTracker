@@ -1,0 +1,25 @@
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Node.js
+node_modules/
+frontend/node_modules/
+
+# Production builds
+frontend/dist/
+
+# Local database
+backend/expenses.db
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
